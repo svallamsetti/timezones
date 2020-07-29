@@ -1,0 +1,16 @@
+version: '3'
+services:
+  frontend:
+    build: ./timeszones-consumer-vue
+    ports:
+      - "${HOST_PORT-8081}:8080"
+    volumes:
+      - ./timeszones-consumer-vue/src:/home/apps/src
+    restart: always
+  backend:
+    build: ./timezones-api
+    ports:
+      - "${HOST_PORT-5001}:5000"
+    volumes:
+      - ./timezones-api:/home/apps
+    restart: always

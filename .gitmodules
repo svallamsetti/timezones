@@ -1,0 +1,6 @@
+[submodule "timezones-api"]
+	path = timezones-api
+	url = https://github.com/svallamsetti/timezones-api.git
+[submodule "timeszones-consumer-vue"]
+	path = timeszones-consumer-vue
+	url = https://github.com/svallamsetti/timeszones-consumer-vue.git
